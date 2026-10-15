@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/laserfiche/main/json-schema/laserfiche-post-repository-v2-repositories-repositoryid-id-response-schema.json",
+  "title": "PostRepositoryV2RepositoriesRepositoryidIdResponse",
+  "x-generated": "2026-10-15",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/laserfiche-guides-openapi-generated.yml#/components/schemas/PostRepositoryV2RepositoriesRepositoryidIdResponse",
+  "type": "object",
+  "properties": {
+    "@odata.context": {
+      "type": "string",
+      "description": "OData metadata URL."
+    },
+    "value": {
+      "type": "array",
+      "description": "List of entries that matched the search query."
+    },
+    "value[].@odata.type": {
+      "type": "string",
+      "description": "OData type of the entry."
+    },
+    "value[].id": {
+      "type": "integer",
+      "description": "Entry identifier."
+    },
+    "value[].isContainer": {
+      "type": "boolean",
+      "description": "Indicates if the entry is a container."
+    },
+    "value[].isLeaf": {
+      "type": "boolean",
+      "description": "Indicates if the entry is a leaf."
+    },
+    "value[].name": {
+      "type": "string",
+      "description": "Name of the entry."
+    },
+    "value[].parentId": {
+      "type": "integer",
+      "description": "Identifier of the parent entry."
+    },
+    "value[].fullPath": {
+      "type": "string",
+      "description": "Full path of the entry (may be null)."
+    },
+    "value[].folderPath": {
+      "type": "string",
+      "description": "Folder path of the entry (may be null)."
+    },
+    "value[].creator": {
+      "type": "string",
+      "description": "Creator of the entry."
+    },
+    "value[].creationTime": {
+      "type": "string",
+      "description": "Creation timestamp."
+    },
+    "value[].lastModifiedTime": {
+      "type": "string",
+      "description": "Last modified timestamp."
+    },
+    "value[].entryType": {
+      "type": "string",
+      "description": "Type of the entry (e.g., Document)."
+    },
+    "value[].templateName": {
+      "type": "string",
+      "description": "Template name (may be null)."
+    },
+    "value[].templateId": {
+      "type": "integer",
+      "description": "Template identifier."
+    },
+    "value[].volumeName": {
+      "type": "string",
+      "description": "Volume name."
+    },
+    "value[].rowNumber": {
+      "type": "integer",
+      "description": "Row number in the result set."
+    }
+  }
+}

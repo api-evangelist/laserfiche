@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/laserfiche/main/json-schema/laserfiche-post-oauth-token-response-schema.json",
+  "title": "PostOauthTokenResponse",
+  "x-generated": "2026-10-15",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/laserfiche-api-openapi-generated.yml#/components/schemas/PostOauthTokenResponse",
+  "type": "object",
+  "properties": {
+    "access_token": {
+      "type": "string",
+      "description": "Bearer token used to call Laserfiche APIs."
+    },
+    "token_type": {
+      "type": "string",
+      "description": "\"bearer\""
+    },
+    "expires_in": {
+      "type": "integer",
+      "description": "Lifetime of the access token in seconds."
+    },
+    "refresh_token": {
+      "type": "string",
+      "description": "Token used to obtain a new access token when the current one expires."
+    },
+    "scope": {
+      "type": "string",
+      "description": "Granted scopes."
+    },
+    "error": {
+      "type": "string",
+      "description": "Error code if the request fails (e.g., invalid_client, invalid_grant)."
+    }
+  }
+}

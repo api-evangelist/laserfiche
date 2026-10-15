@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/laserfiche/main/json-schema/laserfiche-get-repository-v2-repositories-repositoryid-id-response-schema.json",
+  "title": "GetRepositoryV2RepositoriesRepositoryidIdResponse",
+  "x-generated": "2026-10-15",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/laserfiche-guides-openapi-generated.yml#/components/schemas/GetRepositoryV2RepositoriesRepositoryidIdResponse",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Stable identifier of the collection."
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name of the collection."
+    },
+    "entryIds": {
+      "type": "array",
+      "description": "Member entry identifiers."
+    }
+  }
+}

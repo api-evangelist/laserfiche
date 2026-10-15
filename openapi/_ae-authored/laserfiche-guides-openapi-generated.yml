@@ -1,0 +1,497 @@
+openapi: 3.1.0
+info:
+  title: Laserfiche Guides API
+  version: '2026-10-15'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-15: 9 operation(s) read from 4 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Laserfiche has published no machine-readable contract that the
+    pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 19
+    pages-with-code: 0
+    pages-read: 14
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-15'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developer.laserfiche.com/docs/guides/metadata/guide_assign-links
+  - https://developer.laserfiche.com/docs/guides/search/guide_search
+  - https://developer.laserfiche.com/docs/guides/search/guide_simple-search
+  - https://developer.laserfiche.com/docs/guides/user-areas/guide_user-areas
+  x-docs-section: guides
+servers:
+- url: https://api.laserfiche.com
+paths:
+  /repository/v2/Repositories/r-abc123/Entries/{entrieId}/Links:
+    put:
+      operationId: put_repository_v2_Repositories_r_abc123_Entries_entrieId_Links
+      tags:
+      - Repository
+      summary: Assign Links
+      x-source: https://developer.laserfiche.com/docs/guides/metadata/guide_assign-links
+      parameters:
+      - name: entrieId
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksReques'
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksRespon'
+      x-evidence:
+        kind: documentation
+  /repository/v2/Repositories/r-abc123/Searches/SearchAsync:
+    post:
+      operationId: post_repository_v2_Repositories_r_abc123_Searches_SearchAsync
+      tags:
+      - Repository
+      summary: Search
+      description: Launches a search query and returns a task ID for the running operation.
+      x-source: https://developer.laserfiche.com/docs/guides/search/guide_search
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostRepositoryV2RepositoriesRAbc123SearchesSearchasyncReques'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostRepositoryV2RepositoriesRAbc123SearchesSearchasyncRespon'
+      x-evidence:
+        kind: documentation
+  /repository/v2/Repositories/r-abc123/Searches/f1201c58-0dd0-4e39-abcc-450acff1b791/Results:
+    get:
+      operationId: get_repository_v2_Repositories_r_abc123_Searches_f1201c58_0dd0_4e39_abcc_450acff
+      tags:
+      - Repository
+      summary: Search
+      description: Retrieves the result set of a completed search operation.
+      x-source: https://developer.laserfiche.com/docs/guides/search/guide_search
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetRepositoryV2RepositoriesRAbc123SearchesF1201C580Dd04E39Ab'
+      x-evidence:
+        kind: documentation
+  /repository/v2/Repositories/r-abcd1234/UserAreas:
+    post:
+      operationId: post_repository_v2_Repositories_r_abcd1234_UserAreas
+      tags:
+      - Repository
+      summary: Create a user area
+      x-source: https://developer.laserfiche.com/docs/guides/user-areas/guide_user-areas
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostRepositoryV2RepositoriesRAbcd1234UserareasRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostRepositoryV2RepositoriesRAbcd1234UserareasResponse'
+      x-evidence:
+        kind: documentation
+  /repository/v2/Repositories/r-abcd1234/UserAreas/{userareaId}/Entries:
+    post:
+      operationId: post_repository_v2_Repositories_r_abcd1234_UserAreas_userareaId_Entries
+      tags:
+      - Repository
+      summary: Add entries to the area
+      x-source: https://developer.laserfiche.com/docs/guides/user-areas/guide_user-areas
+      parameters:
+      - name: userareaId
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostRepositoryV2RepositoriesRAbcd1234UserareasUserareaidEntr'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostRepositoryV2RepositoriesRAbcd1234UserareasUserareaidEntr2'
+      x-evidence:
+        kind: documentation
+  /repository/v2/Repositories/{repositoryid}/Searches/{taskid}/Results/{rownumber}/ContextHits:
+    get:
+      operationId: get_repository_v2_Repositories_repositoryid_Searches_taskid_Results_rownumber_Co
+      tags:
+      - Repository
+      summary: Search
+      description: Gets text context hits for a specific document in the search results.
+      x-source: https://developer.laserfiche.com/docs/guides/search/guide_search
+      parameters:
+      - name: repositoryid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: taskid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: rownumber
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetRepositoryV2RepositoriesRepositoryidSearchesTaskidResults'
+      x-evidence:
+        kind: documentation
+  /repository/v2/Repositories/{repositoryid}/Tasks:
+    delete:
+      operationId: delete_repository_v2_Repositories_repositoryid_Tasks
+      tags:
+      - Repository
+      summary: Search
+      description: Cancels one or more running tasks (e.g., an active search).
+      x-source: https://developer.laserfiche.com/docs/guides/search/guide_search
+      parameters:
+      - name: repositoryid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: taskIds
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Comma‑separated list of task IDs to cancel.
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /repository/v2/Repositories/{repositoryid}/{id}:
+    get:
+      operationId: get_repository_v2_Repositories_repositoryid_id
+      tags:
+      - Repository
+      summary: Personal Collections
+      x-source: https://developer.laserfiche.com/docs/guides/user-areas/guide_user-areas
+      parameters:
+      - name: repositoryid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetRepositoryV2RepositoriesRepositoryidIdResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 5 example path(s) differing only at id
+    post:
+      operationId: post_repository_v2_Repositories_repositoryid_id
+      tags:
+      - Repository
+      summary: Simple Search
+      description: Runs a simple search query in the repository and returns matching entries immediately.
+      x-source: https://developer.laserfiche.com/docs/guides/search/guide_simple-search
+      parameters:
+      - name: repositoryid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostRepositoryV2RepositoriesRepositoryidIdRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostRepositoryV2RepositoriesRepositoryidIdResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at id
+security:
+- bearer: []
+components:
+  schemas:
+    PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksReques:
+      type: object
+      properties:
+        links:
+          type: array
+          description: List of link objects to assign.
+        linkDefinitionId:
+          type: integer
+          description: Identifier of the link definition (e.g., 1).
+        otherEntryId:
+          type: integer
+          description: Identifier of the target entry (e.g., 15).
+        isSource:
+          type: boolean
+          description: Determines direction of the link.
+        customProperties:
+          type: object
+          description: Key‑value pairs of custom properties.
+      required:
+      - links
+      - linkDefinitionId
+      - otherEntryId
+      - isSource
+    PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksRespon:
+      type: object
+      properties:
+        '@odata.context':
+          type: string
+          description: OData metadata URL.
+        value:
+          type: array
+          description: List of links assigned to the source entry.
+        id:
+          type: integer
+          description: Link identifier.
+        sourceId:
+          type: integer
+          description: Identifier of the source entry.
+        sourceFullPath:
+          type: string
+          description: Full path of the source entry.
+        sourceLabel:
+          type: string
+          description: Label of the source entry.
+        targetId:
+          type: integer
+          description: Identifier of the target entry.
+        targetFullPath:
+          type: string
+          description: Full path of the target entry.
+        targetLabel:
+          type: string
+          description: Label of the target entry.
+        linkDefinitionId:
+          type: integer
+          description: Identifier of the link definition.
+        linkDefinitionDescription:
+          type: string
+          description: Description of the link definition.
+        sourceLink:
+          type: string
+          description: URI to retrieve the source entry.
+        targetLink:
+          type: string
+          description: URI to retrieve the target entry.
+        customProperties:
+          type: object
+          description: Custom properties attached to the link.
+    PostRepositoryV2RepositoriesRAbc123SearchesSearchasyncReques:
+      type: object
+      properties:
+        searchCommand:
+          type: string
+          description: The LF search command string.
+      required:
+      - searchCommand
+    PostRepositoryV2RepositoriesRAbc123SearchesSearchasyncRespon:
+      type: object
+      properties:
+        '@odata.context':
+          type: string
+        taskId:
+          type: string
+    GetRepositoryV2RepositoriesRAbc123SearchesF1201C580Dd04E39Ab:
+      type: object
+      properties:
+        '@odata.context':
+          type: string
+        value:
+          type: array
+          description: List of entry objects representing search results.
+    PostRepositoryV2RepositoriesRAbcd1234UserareasRequest:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Name of the user area.
+        comment:
+          type: string
+          description: Optional comment.
+        data:
+          type: string
+          description: Optional opaque data string.
+      required:
+      - name
+    PostRepositoryV2RepositoriesRAbcd1234UserareasResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Server-assigned identifier of the created area.
+        name:
+          type: string
+          description: Name of the created area.
+        comment:
+          type: string
+          description: Comment of the created area.
+        data:
+          type: string
+          description: Data of the created area.
+    PostRepositoryV2RepositoriesRAbcd1234UserareasUserareaidEntr:
+      type: object
+      properties:
+        entryIds:
+          type: array
+          description: Array of entry identifiers to add to the area.
+      required:
+      - entryIds
+    PostRepositoryV2RepositoriesRAbcd1234UserareasUserareaidEntr2:
+      type: object
+      properties:
+        entryId:
+          type: integer
+          description: Identifier of the entry.
+        fullPath:
+          type: string
+          description: Full path of the entry.
+    GetRepositoryV2RepositoriesRepositoryidSearchesTaskidResults:
+      type: object
+      properties:
+        '@odata.context':
+          type: string
+        value:
+          type: array
+          description: Collection of context hit objects.
+    GetRepositoryV2RepositoriesRepositoryidIdResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Stable identifier of the collection.
+        name:
+          type: string
+          description: Display name of the collection.
+        entryIds:
+          type: array
+          description: Member entry identifiers.
+    PostRepositoryV2RepositoriesRepositoryidIdRequest:
+      type: object
+      properties:
+        searchCommand:
+          type: string
+          description: The search query to execute, e.g. "{[]:[Purchase Order ID]= \" 789 \" }".
+      required:
+      - searchCommand
+    PostRepositoryV2RepositoriesRepositoryidIdResponse:
+      type: object
+      properties:
+        '@odata.context':
+          type: string
+          description: OData metadata URL.
+        value:
+          type: array
+          description: List of entries that matched the search query.
+        value[].@odata.type:
+          type: string
+          description: OData type of the entry.
+        value[].id:
+          type: integer
+          description: Entry identifier.
+        value[].isContainer:
+          type: boolean
+          description: Indicates if the entry is a container.
+        value[].isLeaf:
+          type: boolean
+          description: Indicates if the entry is a leaf.
+        value[].name:
+          type: string
+          description: Name of the entry.
+        value[].parentId:
+          type: integer
+          description: Identifier of the parent entry.
+        value[].fullPath:
+          type: string
+          description: Full path of the entry (may be null).
+        value[].folderPath:
+          type: string
+          description: Folder path of the entry (may be null).
+        value[].creator:
+          type: string
+          description: Creator of the entry.
+        value[].creationTime:
+          type: string
+          description: Creation timestamp.
+        value[].lastModifiedTime:
+          type: string
+          description: Last modified timestamp.
+        value[].entryType:
+          type: string
+          description: Type of the entry (e.g., Document).
+        value[].templateName:
+          type: string
+          description: Template name (may be null).
+        value[].templateId:
+          type: integer
+          description: Template identifier.
+        value[].volumeName:
+          type: string
+          description: Volume name.
+        value[].rowNumber:
+          type: integer
+          description: Row number in the result set.
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+tags:
+- name: Repository

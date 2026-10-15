@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/laserfiche/main/json-schema/laserfiche-post-oauth-token-request-schema.json",
+  "title": "PostOauthTokenRequest",
+  "x-generated": "2026-10-15",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/laserfiche-api-openapi-generated.yml#/components/schemas/PostOauthTokenRequest",
+  "type": "object",
+  "properties": {
+    "grant_type": {
+      "type": "string",
+      "description": "Either \"authorization_code\" or \"refresh_token\"."
+    },
+    "code": {
+      "type": "string",
+      "description": "The authorization code returned from the /authorize endpoint (required when grant_type=authorization_code)."
+    },
+    "redirect_uri": {
+      "type": "string",
+      "description": "Must match the redirect_uri used in the /authorize request (required for authorization_code grant)."
+    },
+    "client_id": {
+      "type": "string",
+      "description": "The Client ID generated when registering the SPA."
+    },
+    "code_verifier": {
+      "type": "string",
+      "description": "PKCE code verifier generated in the first step (required for authorization_code grant)."
+    },
+    "refresh_token": {
+      "type": "string",
+      "description": "Refresh token issued with a previous access token (required when grant_type=refresh_token)."
+    }
+  },
+  "required": [
+    "grant_type",
+    "client_id"
+  ]
+}

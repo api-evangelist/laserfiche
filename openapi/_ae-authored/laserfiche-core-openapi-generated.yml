@@ -1,0 +1,122 @@
+openapi: 3.1.0
+info:
+  title: Laserfiche core API
+  version: '2026-10-15'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-15: 2 operation(s) read from 1 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Laserfiche has published no machine-readable contract that the
+    pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 19
+    pages-with-code: 0
+    pages-read: 14
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-15'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developer.laserfiche.com/docs/getting-started/guide_long-operations-v1
+  x-docs-section: core
+servers:
+- url: https://api.laserfiche.com
+paths:
+  /repository/v1/Repositories/{repoid}/Entries/{destinationentryid}/Laserfiche.Repository.Folder/children/CopyAsync:
+    post:
+      operationId: post_repository_v1_Repositories_repoid_Entries_destinationentryid_Laserfiche_Rep
+      tags:
+      - Repository
+      summary: Long Operations (V1)
+      x-source: https://developer.laserfiche.com/docs/getting-started/guide_long-operations-v1
+      parameters:
+      - name: repoid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: destinationentryid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL2'
+      x-evidence:
+        kind: documentation
+  /repository/v1/Repositories/{repoid}/Tasks/{operationtoken}:
+    get:
+      operationId: get_repository_v1_Repositories_repoid_Tasks_operationtoken
+      tags:
+      - Repository
+      summary: Long Operations (V1)
+      x-source: https://developer.laserfiche.com/docs/getting-started/guide_long-operations-v1
+      parameters:
+      - name: repoid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: operationtoken
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetRepositoryV1RepositoriesRepoidTasksOperationtokenResponse'
+      x-evidence:
+        kind: documentation
+security:
+- bearer: []
+components:
+  schemas:
+    PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL:
+      type: object
+      properties:
+        sourceId:
+          type: integer
+        name:
+          type: string
+      required:
+      - sourceId
+      - name
+    PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL2:
+      type: object
+      properties:
+        token:
+          type: string
+    GetRepositoryV1RepositoriesRepoidTasksOperationtokenResponse:
+      type: object
+      properties:
+        operationToken:
+          type: string
+        operationType:
+          type: string
+        percentComplete:
+          type: integer
+        status:
+          type: string
+        errors:
+          type: array
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+tags:
+- name: Repository

@@ -1,0 +1,112 @@
+generated: '2026-10-15'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/laserfiche-openapi-generated.yml
+vocabulary:
+  name: Laserfiche Domain Vocabulary
+  description: 'Terms declared by Laserfiche''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-15'
+  terms:
+  - term: GetOauthAuthorizeResponse
+    definition: 'Object declared by the contract with fields: code, state, error.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/GetOauthAuthorizeResponse
+  - term: PostOauthTokenRequest
+    definition: 'Object declared by the contract with fields: grant_type, code, redirect_uri, client_id, code_verifier, refresh_token.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PostOauthTokenRequest
+  - term: PostOauthTokenResponse
+    definition: 'Object declared by the contract with fields: access_token, token_type, expires_in, refresh_token, scope, error.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PostOauthTokenResponse
+  - term: GetRepositoryV1RepositoriesResponse
+    definition: 'Object declared by the contract with fields: repositories.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/GetRepositoryV1RepositoriesResponse
+  - term: PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL
+    definition: 'Object declared by the contract with fields: sourceId, name.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL
+  - term: PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL2
+    definition: 'Object declared by the contract with fields: token.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL2
+  - term: GetRepositoryV1RepositoriesRepoidTasksOperationtokenResponse
+    definition: 'Object declared by the contract with fields: operationToken, operationType, percentComplete, status, errors.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/GetRepositoryV1RepositoriesRepoidTasksOperationtokenResponse
+  - term: PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksReques
+    definition: 'Object declared by the contract with fields: links, linkDefinitionId, otherEntryId, isSource, customProperties.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksReques
+  - term: PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksRespon
+    definition: 'Object declared by the contract with fields: @odata.context, value, id, sourceId, sourceFullPath, sourceLabel, targetId, targetFullPath,
+      targetLabel, linkDefinitionId, linkDefinitionDescription, sourceLink. (2 more)'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksRespon
+  - term: PostRepositoryV2RepositoriesRAbc123SearchesSearchasyncReques
+    definition: 'Object declared by the contract with fields: searchCommand.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PostRepositoryV2RepositoriesRAbc123SearchesSearchasyncReques
+  - term: PostRepositoryV2RepositoriesRAbc123SearchesSearchasyncRespon
+    definition: 'Object declared by the contract with fields: @odata.context, taskId.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PostRepositoryV2RepositoriesRAbc123SearchesSearchasyncRespon
+  - term: GetRepositoryV2RepositoriesRAbc123SearchesF1201C580Dd04E39Ab
+    definition: 'Object declared by the contract with fields: @odata.context, value.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/GetRepositoryV2RepositoriesRAbc123SearchesF1201C580Dd04E39Ab
+  - term: PostRepositoryV2RepositoriesRAbcd1234UserareasRequest
+    definition: 'Object declared by the contract with fields: name, comment, data.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PostRepositoryV2RepositoriesRAbcd1234UserareasRequest
+  - term: PostRepositoryV2RepositoriesRAbcd1234UserareasResponse
+    definition: 'Object declared by the contract with fields: id, name, comment, data.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PostRepositoryV2RepositoriesRAbcd1234UserareasResponse
+  - term: PostRepositoryV2RepositoriesRAbcd1234UserareasUserareaidEntr
+    definition: 'Object declared by the contract with fields: entryIds.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PostRepositoryV2RepositoriesRAbcd1234UserareasUserareaidEntr
+  - term: PostRepositoryV2RepositoriesRAbcd1234UserareasUserareaidEntr2
+    definition: 'Object declared by the contract with fields: entryId, fullPath.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PostRepositoryV2RepositoriesRAbcd1234UserareasUserareaidEntr2
+  - term: GetRepositoryV2RepositoriesRepositoryidSearchesTaskidResults
+    definition: 'Object declared by the contract with fields: @odata.context, value.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/GetRepositoryV2RepositoriesRepositoryidSearchesTaskidResults
+  - term: GetRepositoryV2RepositoriesRepositoryidIdResponse
+    definition: 'Object declared by the contract with fields: id, name, entryIds.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/GetRepositoryV2RepositoriesRepositoryidIdResponse
+  - term: PostRepositoryV2RepositoriesRepositoryidIdRequest
+    definition: 'Object declared by the contract with fields: searchCommand.'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PostRepositoryV2RepositoriesRepositoryidIdRequest
+  - term: PostRepositoryV2RepositoriesRepositoryidIdResponse
+    definition: 'Object declared by the contract with fields: @odata.context, value, value[].@odata.type, value[].id, value[].isContainer, value[].isLeaf,
+      value[].name, value[].parentId, value[].fullPath, value[].folderPath, value[].creator, value[].creationTime. (6 more)'
+    tags:
+    - Object
+    source: openapi/_ae-authored/laserfiche-openapi-generated.yml#/components/schemas/PostRepositoryV2RepositoriesRepositoryidIdResponse

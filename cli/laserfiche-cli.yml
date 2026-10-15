@@ -1,0 +1,32 @@
+generated: '2026-10-15'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.laserfiche.com/solutions/migration-tools/
+sources:
+- https://www.laserfiche.com/solutions/migration-tools/
+- https://developer.laserfiche.com/docs/getting-started/guide_low-code-tools/
+- https://developer.laserfiche.com/docs/guides/guide-lookup-tables-cli/
+- https://developer.laserfiche.com/docs/api/libraries/
+install:
+- method: extract
+  command: Extract folder on target machine
+- method: chmod
+  command: sudo chmod 744 LookupTables
+commands:
+- group: list
+  commands:
+  - LookupTables.exe list -lookup-tables --project-scope "project/Global" --service-principal-key "<Service Principal Key>" --access-key-base
+    64 string "<base-64 Access Key string>"
+  - ./LookupTables list -lookup-tables --project-scope "project/Global" --service-principal-key "<Service Principal Key>" --access-key-base 64
+    string "<base-64 Access Key string>"
+- group: query
+  commands:
+  - LookupTables.exe query -lookup-table --project-scope "project/Global" --table-name "<YourTableName>" --output-format JSON --filter "Name in
+    ('John', 'Jane') AND Level eq 'Training'" --service-principal-key "<Service Principal Key>" --access-key-base 64 string "<base-64 Access Key
+    string>"
+  - ./LookupTables query -lookup-table --project-scope "project/Global" --table-name "<YourTableName>" --output-format JSON --filter "Name in
+    ('John', 'Jane') AND Level eq 'Training'" --service-principal-key "<Service Principal Key>" --access-key-base 64 string "<base-64 Access Key
+    string>"
+binary: LookupTables
+docs: https://www.laserfiche.com/solutions/migration-tools/
+note: 1 extracted row(s) were dropped because their quote was not on the page.

@@ -1,0 +1,26 @@
+generated: '2026-10-15'
+method: searched
+source: https://www.laserfiche.com/products/pricing/
+name: Laserfiche pricing
+audience: developer-api
+pricing_basis: per-user
+published: true
+plans:
+  - name: Professional
+    price_text: "$50* per user/month"
+    price: 50
+    currency: USD
+    billing_period: month
+    notes: "Starting price per user as listed in page meta description."
+  - name: Business
+    price_text: "$50* per user/month"
+    price: 50
+    currency: USD
+    billing_period: month
+    notes: "Starting price per user as listed in page meta description."
+  - name: Business+
+    price_text: "$50* per user/month"
+    price: 50
+    currency: USD
+    billing_period: month
+    notes: "Starting price per user as listed in page meta description."

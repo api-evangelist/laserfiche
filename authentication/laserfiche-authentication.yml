@@ -1,0 +1,19 @@
+generated: '2026-10-15'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://developer.laserfiche.com/docs/api/authentication/
+sources:
+- https://developer.laserfiche.com/docs/api/authentication/
+- https://developer.laserfiche.com/docs/api/authentication/guide_authenticating-to-the-swagger-playground/
+- https://developer.laserfiche.com/docs/api/authentication/guide_service-principals/
+- https://developer.laserfiche.com/docs/api/authentication/guide_oauth-service/
+description: Laserfiche APIs use OAuth 2.0 bearer tokens or Basic authentication.
+schemes:
+- type: http-basic
+  name: Basic Authentication
+  evidence: If you have a username and password, find the Basic Authentication (http) option. Enter the username and password values you received
+    in step 1. Click Authorize. This will automatically add the Authorization header to your requests.
+  location: header
+  header: Authorization
+docs: https://developer.laserfiche.com/docs/api/authentication/
+note: 1 extracted row(s) were dropped because their quote was not on the page.

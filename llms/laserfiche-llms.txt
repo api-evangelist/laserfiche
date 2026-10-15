@@ -1,0 +1,99 @@
+# Laserfiche
+ 
+> Laserfiche is a document management, enterprise content management (ECM) and process automation platform that centralizes and secures organizational content, automates workflows, and enables people and AI to collaborate across everyday enterprise processes. Founded in 1976 by Nien-Ling Wacker and headquartered in Long Beach, California, Laserfiche serves customers across government, education, financial services, healthcare, manufacturing, and logistics.
+ 
+The platform is delivered primarily as SaaS (Laserfiche Cloud) with self-hosted options, and is sold both directly and through a global network of solution providers. Laserfiche is a registered trademark of Compulink.
+ 
+Key terminology: "Laserfiche Cloud" is the flagship product — the SaaS platform. "Laserfiche 12" is the current self-hosted release. "Empower" is the annual user conference. The "Solution Marketplace" hosts prebuilt, customizable process templates. Recognition includes Leader in the 2026 Gartner Magic Quadrant for Document Management.
+ 
+## Product
+ 
+- [Product overview](https://www.laserfiche.com/products/): The full Laserfiche platform — ECM plus process automation, positioned as one unified system rather than separate tools.
+- [Artificial Intelligence](https://www.laserfiche.com/products/ai/): AI capabilities for document understanding, data extraction, and workflow assistance.
+- [Document & Records Management](https://www.laserfiche.com/products/document-and-records-management/): Centralized repository, version control, retention, and records lifecycle management.
+- [Data Capture](https://www.laserfiche.com/products/intelligent-data-capture/): Intelligent capture and classification of documents and form data from scanned and digital sources.
+- [Workflow Automation](https://www.laserfiche.com/products/process-automation/): Business process automation, electronic forms, and approval routing.
+- [Information Governance](https://www.laserfiche.com/products/information-governance/): Policy enforcement, retention schedules, audit trails, and compliance controls.
+- [Integrations](https://www.laserfiche.com/products/integrations/): Connections to line-of-business systems, Microsoft 365, ERP, CRM, HRIS, and other enterprise applications.
+- [Laserfiche 12](https://www.laserfiche.com/products/lf12/): Current self-hosted release and its capabilities.
+- [Product Updates](https://www.laserfiche.com/products/whats-new/): Release notes and newly shipped features.
+- [Trust & Compliance](https://www.laserfiche.com/products/trust-security/): Security architecture, certifications, data residency, and compliance posture.
+- [Pricing Plans](https://www.laserfiche.com/products/pricing/): Subscription tiers and what each includes.
+ 
+## Solutions by industry
+ 
+- [Solutions overview](https://www.laserfiche.com/solutions/): Index of industry, department, and business-process solutions.
+- [Government](https://www.laserfiche.com/solutions/government/): Records, agenda management, permitting, and citizen services for public agencies.
+- [State & Local Government](https://www.laserfiche.com/solutions/government/state-and-local-government/): Solutions specific to municipal, county, and state agencies.
+- [Native Nations](https://www.laserfiche.com/solutions/government/native-nations/): Solutions for tribal governments and enterprises.
+- [Education](https://www.laserfiche.com/solutions/education/): Student records, admissions, and administrative automation.
+- [K-12 Schools & Districts](https://www.laserfiche.com/solutions/education/k12-schools-and-districts/): Enrollment, student files, and district operations.
+- [Higher Education](https://www.laserfiche.com/solutions/education/higher-education/): Admissions, financial aid, registrar, and faculty workflows.
+- [Financial Services](https://www.laserfiche.com/solutions/financial-services/): Loan origination, account opening, and client onboarding for banks and credit unions.
+- [Insurance](https://www.laserfiche.com/solutions/financial-services/insurance/): Claims, underwriting, and policy documentation.
+- [Healthcare](https://www.laserfiche.com/solutions/healthcare/): Patient administration, medical billing, and clinical records support.
+- [Manufacturing](https://www.laserfiche.com/solutions/manufacturing/): Quality documentation, production records, and supplier processes.
+- [Logistics](https://www.laserfiche.com/solutions/logistics/): Supply chain documentation and freight/shipping paperwork automation.
+ 
+## Solutions by department and process
+ 
+- [Accounting & Finance](https://www.laserfiche.com/solutions/accounting-and-finance/): Invoice processing, AP automation, and financial document control.
+- [Human Resources](https://www.laserfiche.com/solutions/human-resources/): Employee records across the full employment lifecycle.
+- [Information Technology](https://www.laserfiche.com/solutions/information-technology/): Platform administration, infrastructure modernization, and scalability.
+- [Legal & Compliance](https://www.laserfiche.com/solutions/legal-compliance/): Records access, legal holds, and compliance-bound processes.
+- [Case Management](https://www.laserfiche.com/solutions/case-management/): Client and constituent case handling with controlled information access.
+- [Contract Management](https://www.laserfiche.com/solutions/contract-management/): Contract creation, review, e-signature, and retention.
+- [Employee Onboarding](https://www.laserfiche.com/solutions/employee-onboarding/): New hire paperwork, approvals, and provisioning workflows.
+- [Cloud Migration Tools](https://www.laserfiche.com/solutions/migration-tools/): Tooling for moving self-hosted deployments to Laserfiche Cloud.
+- [Solution Marketplace](https://marketplace.laserfiche.com/home): Prebuilt, customizable process templates contributed by Laserfiche, partners, and the community.
+ 
+## Learning and support
+ 
+- [Learn & Support](https://www.laserfiche.com/learn-support/): Entry point for training, documentation, and support resources.
+- [Product Education (Aspire)](https://www.laserfiche.com/learn-support/aspire/): Self-paced interactive learning modules and guides.
+- [Certification](https://www.laserfiche.com/learn-support/certification/): Professional certification tracks for administrators and developers.
+- [Developer Center](https://www.laserfiche.com/learn-support/developer-center/): APIs, SDKs, and developer documentation for building on Laserfiche.
+- [Support Plans](https://www.laserfiche.com/learn-support/support-plans/): Support tiers and service levels.
+ 
+## Customers and evidence
+ 
+- [Customer Stories](https://www.laserfiche.com/resources/customer-stories/): Named customer case studies with outcomes and ROI detail.
+- [Trusted Reviews](https://www.laserfiche.com/resources/reviews/): Third-party analyst recognition and customer review ratings.
+- [Laserfiche Champion](https://www.laserfiche.com/resources/champion/): Program recognizing customer advocates and power users.
+ 
+## Resources
+ 
+- [Resources hub](https://www.laserfiche.com/resources/): Index of all published content.
+- [Blog](https://www.laserfiche.com/resources/blog/): Articles on ECM, automation, AI, and industry practice.
+- [eBooks, Guides & More](https://www.laserfiche.com/resources/ebooks-guides-more/): Long-form guides, whitepapers, and videos.
+- [Press Center](https://www.laserfiche.com/resources/press-center/): Company news and press releases.
+- [Webinars](https://www.laserfiche.com/resources/events/webinars/): Live and on-demand sessions.
+- [Empower](https://empower.laserfiche.com/): Annual Laserfiche user conference.
+- [User Groups](https://www.laserfiche.com/resources/events/user-groups/): Regional in-person user communities.
+- [Instructor-led Training](https://www.laserfiche.com/resources/events/training/): Scheduled live training sessions.
+- [Trade Shows](https://www.laserfiche.com/resources/events/trade-shows/): Industry events where Laserfiche exhibits.
+ 
+## Partners
+ 
+- [Partners overview](https://www.laserfiche.com/partners/): How Laserfiche works with resellers, integrators, and technology vendors.
+- [Solution Provider Program](https://www.laserfiche.com/partners/solution-provider-program/): Reseller and implementation partner program.
+- [Premier Partner Program](https://www.laserfiche.com/partners/premier-partner-program/): Top-tier partner designation.
+- [Technology Alliances](https://www.laserfiche.com/partners/technology-alliance/): Integration and joint-solution partnerships.
+ 
+## Company
+ 
+- [About Us](https://www.laserfiche.com/about-us/): Company mission, priorities, and history.
+- [Leadership](https://www.laserfiche.com/leadership/): Executive team.
+- [Careers](https://www.laserfiche.com/careers/): Open roles and hiring information.
+- [Laserfiche in Action](https://www.laserfiche.com/csr/): Corporate social responsibility and community programs.
+- [Contact](https://www.laserfiche.com/contact/): Contact form and corporate details. Headquarters: 3443 Long Beach Blvd., Long Beach, CA 90807, USA. Phone: +1 800 985 8533.
+- [Get a Demo](https://www.laserfiche.com/get-a-demo/): Request a product demonstration.
+ 
+## Optional
+ 
+- [Legal](https://www.laserfiche.com/legal/): Index of legal terms and notices.
+- [Privacy Notice](https://www.laserfiche.com/legal/privacy/): How Laserfiche collects and handles personal data.
+- [Terms of Use](https://www.laserfiche.com/legal/terms-of-use/): Website terms.
+- [Cookie Statement](https://www.laserfiche.com/legal/cookie/): Cookie usage and controls.
+- [Login](https://www.laserfiche.com/signon/): Customer and partner account sign-in.
+- Localized sites: [Español](https://www.laserfiche.com/es), [Français](https://www.laserfiche.com/fr), [Deutsch](https://www.laserfiche.com/de/), [中文](https://www.laserfiche.com/zh-hans)

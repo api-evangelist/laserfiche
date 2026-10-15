@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/laserfiche/main/json-schema/laserfiche-get-repository-v1-repositories-response-schema.json",
+  "title": "GetRepositoryV1RepositoriesResponse",
+  "x-generated": "2026-10-15",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/laserfiche-api-openapi-generated.yml#/components/schemas/GetRepositoryV1RepositoriesResponse",
+  "type": "object",
+  "properties": {
+    "repositories": {
+      "type": "array",
+      "description": "Array of repository objects (fields not detailed in this guide)."
+    }
+  }
+}

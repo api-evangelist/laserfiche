@@ -1,0 +1,207 @@
+{
+  "@context": {
+    "@vocab": "https://laserfiche.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "laserfiche": "https://laserfiche.com/schema#",
+    "GetOauthAuthorizeResponse": "laserfiche:GetOauthAuthorizeResponse",
+    "code": {
+      "@id": "laserfiche:code",
+      "@type": "xsd:string"
+    },
+    "state": {
+      "@id": "laserfiche:state",
+      "@type": "xsd:string"
+    },
+    "error": {
+      "@id": "laserfiche:error",
+      "@type": "xsd:string"
+    },
+    "PostOauthTokenRequest": "laserfiche:PostOauthTokenRequest",
+    "grant_type": {
+      "@id": "laserfiche:grant_type",
+      "@type": "xsd:string"
+    },
+    "redirect_uri": {
+      "@id": "laserfiche:redirect_uri",
+      "@type": "xsd:string"
+    },
+    "client_id": {
+      "@id": "laserfiche:client_id",
+      "@type": "xsd:string"
+    },
+    "code_verifier": {
+      "@id": "laserfiche:code_verifier",
+      "@type": "xsd:string"
+    },
+    "refresh_token": {
+      "@id": "laserfiche:refresh_token",
+      "@type": "xsd:string"
+    },
+    "PostOauthTokenResponse": "laserfiche:PostOauthTokenResponse",
+    "access_token": {
+      "@id": "laserfiche:access_token",
+      "@type": "xsd:string"
+    },
+    "token_type": {
+      "@id": "laserfiche:token_type",
+      "@type": "xsd:string"
+    },
+    "expires_in": {
+      "@id": "laserfiche:expires_in",
+      "@type": "xsd:integer"
+    },
+    "scope": {
+      "@id": "laserfiche:scope",
+      "@type": "xsd:string"
+    },
+    "GetRepositoryV1RepositoriesResponse": "laserfiche:GetRepositoryV1RepositoriesResponse",
+    "repositories": {
+      "@id": "laserfiche:repositories",
+      "@container": "@list"
+    },
+    "PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL": "laserfiche:PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL",
+    "sourceId": {
+      "@id": "laserfiche:sourceId",
+      "@type": "xsd:integer"
+    },
+    "name": {
+      "@id": "laserfiche:name",
+      "@type": "xsd:string"
+    },
+    "PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL2": "laserfiche:PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL2",
+    "token": {
+      "@id": "laserfiche:token",
+      "@type": "xsd:string"
+    },
+    "GetRepositoryV1RepositoriesRepoidTasksOperationtokenResponse": "laserfiche:GetRepositoryV1RepositoriesRepoidTasksOperationtokenResponse",
+    "operationToken": {
+      "@id": "laserfiche:operationToken",
+      "@type": "xsd:string"
+    },
+    "operationType": {
+      "@id": "laserfiche:operationType",
+      "@type": "xsd:string"
+    },
+    "percentComplete": {
+      "@id": "laserfiche:percentComplete",
+      "@type": "xsd:integer"
+    },
+    "status": {
+      "@id": "laserfiche:status",
+      "@type": "xsd:string"
+    },
+    "errors": {
+      "@id": "laserfiche:errors",
+      "@container": "@list"
+    },
+    "PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksReques": "laserfiche:PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksReques",
+    "links": {
+      "@id": "laserfiche:links",
+      "@container": "@list"
+    },
+    "linkDefinitionId": {
+      "@id": "laserfiche:linkDefinitionId",
+      "@type": "xsd:integer"
+    },
+    "otherEntryId": {
+      "@id": "laserfiche:otherEntryId",
+      "@type": "xsd:integer"
+    },
+    "isSource": {
+      "@id": "laserfiche:isSource",
+      "@type": "xsd:boolean"
+    },
+    "customProperties": {
+      "@id": "laserfiche:customProperties"
+    },
+    "PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksRespon": "laserfiche:PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksRespon",
+    "value": {
+      "@id": "laserfiche:value",
+      "@container": "@list"
+    },
+    "id": {
+      "@id": "laserfiche:id",
+      "@type": "xsd:integer"
+    },
+    "sourceFullPath": {
+      "@id": "laserfiche:sourceFullPath",
+      "@type": "xsd:string"
+    },
+    "sourceLabel": {
+      "@id": "laserfiche:sourceLabel",
+      "@type": "xsd:string"
+    },
+    "targetId": {
+      "@id": "laserfiche:targetId",
+      "@type": "xsd:integer"
+    },
+    "targetFullPath": {
+      "@id": "laserfiche:targetFullPath",
+      "@type": "xsd:string"
+    },
+    "targetLabel": {
+      "@id": "laserfiche:targetLabel",
+      "@type": "xsd:string"
+    },
+    "linkDefinitionDescription": {
+      "@id": "laserfiche:linkDefinitionDescription",
+      "@type": "xsd:string"
+    },
+    "sourceLink": {
+      "@id": "laserfiche:sourceLink",
+      "@type": "xsd:string"
+    },
+    "targetLink": {
+      "@id": "laserfiche:targetLink",
+      "@type": "xsd:string"
+    },
+    "PostRepositoryV2RepositoriesRAbc123SearchesSearchasyncReques": "laserfiche:PostRepositoryV2RepositoriesRAbc123SearchesSearchasyncReques",
+    "searchCommand": {
+      "@id": "laserfiche:searchCommand",
+      "@type": "xsd:string"
+    },
+    "PostRepositoryV2RepositoriesRAbc123SearchesSearchasyncRespon": "laserfiche:PostRepositoryV2RepositoriesRAbc123SearchesSearchasyncRespon",
+    "taskId": {
+      "@id": "laserfiche:taskId",
+      "@type": "xsd:string"
+    },
+    "GetRepositoryV2RepositoriesRAbc123SearchesF1201C580Dd04E39Ab": "laserfiche:GetRepositoryV2RepositoriesRAbc123SearchesF1201C580Dd04E39Ab",
+    "PostRepositoryV2RepositoriesRAbcd1234UserareasRequest": "laserfiche:PostRepositoryV2RepositoriesRAbcd1234UserareasRequest",
+    "comment": {
+      "@id": "laserfiche:comment",
+      "@type": "xsd:string"
+    },
+    "data": {
+      "@id": "laserfiche:data",
+      "@type": "xsd:string"
+    },
+    "PostRepositoryV2RepositoriesRAbcd1234UserareasResponse": "laserfiche:PostRepositoryV2RepositoriesRAbcd1234UserareasResponse",
+    "PostRepositoryV2RepositoriesRAbcd1234UserareasUserareaidEntr": "laserfiche:PostRepositoryV2RepositoriesRAbcd1234UserareasUserareaidEntr",
+    "entryIds": {
+      "@id": "laserfiche:entryIds",
+      "@container": "@list"
+    },
+    "PostRepositoryV2RepositoriesRAbcd1234UserareasUserareaidEntr2": "laserfiche:PostRepositoryV2RepositoriesRAbcd1234UserareasUserareaidEntr2",
+    "entryId": {
+      "@id": "laserfiche:entryId",
+      "@type": "xsd:integer"
+    },
+    "fullPath": {
+      "@id": "laserfiche:fullPath",
+      "@type": "xsd:string"
+    },
+    "GetRepositoryV2RepositoriesRepositoryidSearchesTaskidResults": "laserfiche:GetRepositoryV2RepositoriesRepositoryidSearchesTaskidResults",
+    "GetRepositoryV2RepositoriesRepositoryidIdResponse": "laserfiche:GetRepositoryV2RepositoriesRepositoryidIdResponse",
+    "PostRepositoryV2RepositoriesRepositoryidIdRequest": "laserfiche:PostRepositoryV2RepositoriesRepositoryidIdRequest",
+    "PostRepositoryV2RepositoriesRepositoryidIdResponse": "laserfiche:PostRepositoryV2RepositoriesRepositoryidIdResponse"
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Laserfiche API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Laserfiche's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-15) from openapi/_ae-authored/laserfiche-openapi-generated.yml.",
+  "dcterms:created": "2026-10-15",
+  "dcterms:source": [
+    "openapi/_ae-authored/laserfiche-openapi-generated.yml"
+  ]
+}

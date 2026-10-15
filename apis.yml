@@ -1,26 +1,174 @@
 aid: laserfiche
+
 name: Laserfiche
-description: 'Laserfiche delivers enterprise content management, document management, and process automation solutions that help organizations capture, manage, and secure information across people, processes, and systems. Their platform combines AI-powered data capture, workflow automation, records management, and compliance tools to improve productivity and governance for businesses of all sizes.'
+
+image: https://www.laserfiche.com/wp-content/uploads/2024/12/hero-workflow-1024x720-2412.png
+
+description: Laserfiche delivers enterprise content management, document management, and process automation solutions that help organizations
+  capture, manage, and secure information across people, processes, and systems. Their platform combines AI-powered data capture, workflow automation,
+  records management, and compliance tools to improve productivity and governance for businesses of all sizes.
+
 url: https://raw.githubusercontent.com/api-evangelist/laserfiche/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:tag-qc
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-15 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-14'
+
 modified: '2026-10-14'
+
 tags:
 - Company
-apis: []
+- EnterpriseContentManagement
+- DocumentManagement
+- ProcessAutomation
+- AI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: SecurityTxt
+  url: well-known/laserfiche-status-security.txt
+- type: Plans
+  url: plans/laserfiche-plans-pricing.yml
+- type: Spectral
+  url: rules/laserfiche-rules.yml
+- type: JSONLD
+  url: json-ld/laserfiche-context.jsonld
+- type: Vocabulary
+  url: vocabulary/laserfiche-vocabulary.yml
+- type: DataModel
+  url: data-model/laserfiche-data-model.yml
+- type: CLI
+  url: cli/laserfiche-cli.yml
+- type: Authentication
+  url: authentication/laserfiche-authentication.yml
+- type: Conformance
+  url: conformance/laserfiche-conformance.yml
+- type: LLMsTxt
+  url: llms/laserfiche-llms.txt
+- type: SecurityTxt
+  url: well-known/laserfiche-security.txt
+- type: WellKnown
+  url: well-known/laserfiche-well-known.yml
+- type: Hosts
+  url: hosts/laserfiche-hosts.yml
+- type: Vendors
+  url: vendors/laserfiche-vendors.yml
+- type: TermsOfService
+  url: https://www.laserfiche.com/legal/terms-of-use/
+- type: StatusPage
+  url: https://status.laserfiche.com/
+- type: Security
+  url: https://www.laserfiche.com/products/trust-security/security/
+- type: PrivacyPolicy
+  url: https://www.laserfiche.com/legal/privacy/
+- type: Newsroom
+  url: https://www.laserfiche.com/resources/press-center/press/enterprise-security-launch/
+- type: Leadership
+  url: https://www.laserfiche.com/leadership/
+- type: ChangeLog
+  url: https://www.laserfiche.com/products/whats-new/
 - type: VulnerabilityDisclosure
   url: security/laserfiche-vulnerability-disclosure.yml
 - type: DomainSecurity
   url: security/laserfiche-domain-security.yml
 - type: Website
   url: https://www.laserfiche.com
+- type: DeveloperPortal
+  url: https://www.laserfiche.com/learn-support/developer-center/
+- type: Documentation
+  url: https://www.laserfiche.com/learn-support/developer-center/
+- type: GettingStarted
+  url: https://www.laserfiche.com/learn-support/developer-center/
+- type: Pricing
+  url: https://www.laserfiche.com/products/pricing/
+- type: Support
+  url: https://www.laserfiche.com/learn-support/
+- type: Blog
+  url: https://www.laserfiche.com/blog/
+
+apis:
+- name: Laserfiche API
+  description: API documentation and developer resources for Laserfiche platform
+  humanURL: https://developer.laserfiche.com/
+  aid: laserfiche:laserfiche-api
+- aid: laserfiche:api-api
+  name: Laserfiche api API
+  description: 'Laserfiche api API as documented publicly: 8 operations. Contract generated from the documentation by API Evangelist (2026-10-15);
+    not the provider''s own document.'
+  humanURL: https://developer.laserfiche.com/docs/api
+  baseURL: https://api.laserfiche.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/laserfiche-api-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/laserfiche-post-oauth-token-request-schema.json
+  - type: JSONSchema
+    url: json-schema/laserfiche-post-oauth-token-response-schema.json
+  - type: JSONSchema
+    url: json-schema/laserfiche-get-repository-v1-repositories-response-schema.json
+- aid: laserfiche:core-api
+  name: Laserfiche core API
+  description: 'Laserfiche core API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-10-15);
+    not the provider''s own document.'
+  humanURL: https://developer.laserfiche.com/docs/getting-started
+  baseURL: https://api.laserfiche.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/laserfiche-core-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/laserfiche-get-repository-v1-repositories-repoid-tasks-operationtoken-response-schema.json
+  - type: JSONSchema
+    url: json-schema/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l-schema.json
+  - type: JSONSchema
+    url: json-schema/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l2-schema.json
+- aid: laserfiche:guides-api
+  name: Laserfiche Guides API
+  description: 'Laserfiche Guides API as documented publicly: 9 operations. Contract generated from the documentation by API Evangelist (2026-10-15);
+    not the provider''s own document.'
+  humanURL: https://developer.laserfiche.com/docs/guides
+  baseURL: https://api.laserfiche.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/laserfiche-guides-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/laserfiche-post-repository-v2-repositories-repositoryid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-respon-schema.json
+  - type: JSONSchema
+    url: json-schema/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-reques-schema.json
+  - type: JSONSchema
+    url: json-schema/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-response-schema.json
+  - type: JSONSchema
+    url: json-schema/laserfiche-get-repository-v2-repositories-repositoryid-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-request-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer portal returns HTML rendered by JavaScript with no machine‑readable spec.
+  evidence:
+  - url: https://developer.laserfiche.com/
+    status: 200
+  checked: '2026-10-15'
+x-enrichment:
+  date: '2026-10-15'
+  status: enriched
+  artifacts_added: 32
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

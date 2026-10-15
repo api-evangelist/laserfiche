@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/laserfiche/main/json-schema/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-request-schema.json",
+  "title": "PostRepositoryV2RepositoriesRAbcd1234UserareasRequest",
+  "x-generated": "2026-10-15",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/laserfiche-guides-openapi-generated.yml#/components/schemas/PostRepositoryV2RepositoriesRAbcd1234UserareasRequest",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the user area."
+    },
+    "comment": {
+      "type": "string",
+      "description": "Optional comment."
+    },
+    "data": {
+      "type": "string",
+      "description": "Optional opaque data string."
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

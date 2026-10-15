@@ -1,0 +1,11 @@
+generated: '2026-10-15'
+method: probed
+source: https://www.laserfiche.com/legal/privacy/
+signals:
+  data_retention:
+    evidence:
+      - source: https://www.laserfiche.com/legal/privacy/
+        http_status: 200
+        fetched: /tmp/laserfiche_privacy2.html
+        quote: "We retain each category of personal information, including sensitive personal information, for the length of time that is reasonably necessary for the purpose for which it was collected, and as necessary to comply with our legal obligations, resolve disputes, prevent fraud, and enforce our agreements."
+    note: Retains personal data only as long as needed for purposes and legal obligations.
