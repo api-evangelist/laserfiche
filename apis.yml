@@ -1,7 +1,6 @@
 aid: laserfiche
 name: Laserfiche
-description: 'Laserfiche is a company surfaced via the API Evangelist harvest backlog (source: tag-qc)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Laserfiche delivers enterprise content management, document management, and process automation solutions that help organizations capture, manage, and secure information across people, processes, and systems. Their platform combines AI-powered data capture, workflow automation, records management, and compliance tools to improve productivity and governance for businesses of all sizes.'
 url: https://raw.githubusercontent.com/api-evangelist/laserfiche/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:tag-qc
@@ -19,5 +18,9 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/laserfiche-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/laserfiche-domain-security.yml
 - type: Website
   url: https://www.laserfiche.com
