@@ -1,0 +1,26 @@
+{
+  "provider": "laserfiche",
+  "sources": [
+    "_ae-authored/laserfiche-openapi-generated.yml"
+  ],
+  "outputs": [
+    "laserfiche-oauth-api-openapi.yml",
+    "laserfiche-odata4-api-openapi.yml",
+    "laserfiche-repositories-api-openapi.yml",
+    "laserfiche-repository-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "3 archived document(s) dropped as subsets of other archived documents",
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "laserfiche-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: written (+4 apis, 5 total)"
+  ],
+  "skipped": [
+    "_ae-authored/laserfiche-guides-openapi-generated.yml: archived document superseded by a larger archived document",
+    "_ae-authored/laserfiche-core-openapi-generated.yml: archived document superseded by a larger archived document",
+    "_ae-authored/laserfiche-api-openapi-generated.yml: archived document superseded by a larger archived document"
+  ]
+}

@@ -1,0 +1,190 @@
+openapi: 3.2.0
+info:
+  title: Laserfiche OAuth API
+  version: '2026-10-15'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-15: 19 operation(s) read from 14 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Laserfiche has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 19
+    pages-with-code: 0
+    pages-read: 14
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-15'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developer.laserfiche.com/docs/api/authentication/guide_oauth-spa
+  - https://developer.laserfiche.com/docs/api/authentication/guide_oauth-webapp
+  - https://developer.laserfiche.com/docs/api/server/installing-and-configuring
+  - https://developer.laserfiche.com/docs/api/authentication/guide_oauth-service
+  - https://developer.laserfiche.com/docs/api/guide_overview-of-the-laserfiche-api
+  - https://developer.laserfiche.com/docs/api/authentication/guide_oauth_2.0_scopes
+  - https://developer.laserfiche.com/docs/getting-started/guide_low-code-tools
+  - https://developer.laserfiche.com/docs/getting-started/guide_low-code-tools-v1
+  - https://developer.laserfiche.com/docs/getting-started/guide_long-operations-v1
+  - https://developer.laserfiche.com/docs/guides/search/guide_search
+  - https://developer.laserfiche.com/docs/guides/metadata/guide_assign-tag
+  - https://developer.laserfiche.com/docs/guides/search/guide_simple-search
+  - https://developer.laserfiche.com/docs/guides/metadata/guide_assign-links
+  - https://developer.laserfiche.com/docs/guides/user-areas/guide_user-areas
+servers:
+- url: https://api.laserfiche.com
+security:
+- bearer: []
+tags:
+- name: OAuth
+paths:
+  /oauth/authorize:
+    get:
+      operationId: get_oauth_authorize
+      tags:
+      - OAuth
+      summary: Start the OAuth authorization code flow to get an access token that can be used…
+      description: The endpoint returns an authorization code (or error) via redirect to the supplied redirect_uri.
+      x-source: https://developer.laserfiche.com/docs/api/authentication/guide_oauth-spa
+      parameters:
+      - name: client_id
+        in: query
+        required: true
+        schema:
+          type: string
+        description: The Client ID generated during the application registration process.
+      - name: response_type
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Must be "code" for authorization code grant flow.
+      - name: state
+        in: query
+        required: false
+        schema:
+          type: string
+        description: Optional value to maintain application state and prevent CSRF.
+      - name: redirect_uri
+        in: query
+        required: true
+        schema:
+          type: string
+        description: One of the registered redirect URIs for the SPA.
+      - name: customerId
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Laserfiche Cloud Account ID used during app registration.
+      - name: code_challenge
+        in: query
+        required: true
+        schema:
+          type: string
+        description: PKCE code challenge generated from the code verifier.
+      - name: code_challenge_method
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Must be "S256".
+      - name: scope
+        in: query
+        required: true
+        schema:
+          type: string
+        description: Space‑delimited list of OAuth 2.0 scopes.
+      responses:
+        '302':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetOauthAuthorizeResponse'
+      x-evidence:
+        kind: documentation
+  /oauth/token:
+    post:
+      operationId: post_oauth_token
+      tags:
+      - OAuth
+      summary: Exchange an authorization code for an access token or refresh an access token…
+      description: Returns JSON with access token information on success or an error object on failure.
+      x-source: https://developer.laserfiche.com/docs/api/authentication/guide_oauth-spa
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostOauthTokenRequest'
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostOauthTokenResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    PostOauthTokenRequest:
+      type: object
+      properties:
+        grant_type:
+          type: string
+          description: Either "authorization_code" or "refresh_token".
+        code:
+          type: string
+          description: The authorization code returned from the /authorize endpoint (required when grant_type=authorization_code).
+        redirect_uri:
+          type: string
+          description: Must match the redirect_uri used in the /authorize request (required for authorization_code grant).
+        client_id:
+          type: string
+          description: The Client ID generated when registering the SPA.
+        code_verifier:
+          type: string
+          description: PKCE code verifier generated in the first step (required for authorization_code grant).
+        refresh_token:
+          type: string
+          description: Refresh token issued with a previous access token (required when grant_type=refresh_token).
+      required:
+      - grant_type
+      - client_id
+    PostOauthTokenResponse:
+      type: object
+      properties:
+        access_token:
+          type: string
+          description: Bearer token used to call Laserfiche APIs.
+        token_type:
+          type: string
+          description: '"bearer"'
+        expires_in:
+          type: integer
+          description: Lifetime of the access token in seconds.
+        refresh_token:
+          type: string
+          description: Token used to obtain a new access token when the current one expires.
+        scope:
+          type: string
+          description: Granted scopes.
+        error:
+          type: string
+          description: Error code if the request fails (e.g., invalid_client, invalid_grant).
+    GetOauthAuthorizeResponse:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Authorization code returned on successful user consent.
+        state:
+          type: string
+          description: Returned state value if it was supplied in the request.
+        error:
+          type: string
+          description: Error code if the request fails (e.g., invalid_request, access_denied).
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer

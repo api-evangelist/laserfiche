@@ -103,61 +103,178 @@ apis:
   description: API documentation and developer resources for Laserfiche platform
   humanURL: https://developer.laserfiche.com/
   aid: laserfiche:laserfiche-api
-- aid: laserfiche:api-api
-  name: Laserfiche api API
-  description: 'Laserfiche api API as documented publicly: 8 operations. Contract generated from the documentation by API Evangelist (2026-10-15);
-    not the provider''s own document.'
-  humanURL: https://developer.laserfiche.com/docs/api
+- aid: laserfiche:laserfiche-oauth-api
+  name: Laserfiche OAuth API
+  description: The Oauth API from Laserfiche — 2 operation(s) for oauth.
+  humanURL: https://developer.laserfiche.com/
   baseURL: https://api.laserfiche.com
+  tags:
+  - Oauth
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/laserfiche-api-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/laserfiche-oauth-api-openapi.yml
   - type: JSONSchema
     url: json-schema/laserfiche-post-oauth-token-request-schema.json
   - type: JSONSchema
     url: json-schema/laserfiche-post-oauth-token-response-schema.json
   - type: JSONSchema
     url: json-schema/laserfiche-get-repository-v1-repositories-response-schema.json
-- aid: laserfiche:core-api
-  name: Laserfiche core API
-  description: 'Laserfiche core API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-10-15);
-    not the provider''s own document.'
-  humanURL: https://developer.laserfiche.com/docs/getting-started
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-get-repository-v1-repositories-repoid-tasks-operationtoken-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l2-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v2-repositories-repositoryid-id-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-respon-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-reques-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-get-repository-v2-repositories-repositoryid-id-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-request-schema.json
+- aid: laserfiche:laserfiche-odata4-api
+  name: Laserfiche Odata4 API
+  description: The Odata4 API from Laserfiche — 2 operation(s) for odata4.
+  humanURL: https://developer.laserfiche.com/
   baseURL: https://api.laserfiche.com
+  tags:
+  - Odata4
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/laserfiche-core-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/laserfiche-odata4-api-openapi.yml
   - type: JSONSchema
-    url: json-schema/laserfiche-get-repository-v1-repositories-repoid-tasks-operationtoken-response-schema.json
+    url: json-schema/laserfiche-post-oauth-token-request-schema.json
   - type: JSONSchema
-    url: json-schema/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l-schema.json
+    url: json-schema/laserfiche-post-oauth-token-response-schema.json
   - type: JSONSchema
-    url: json-schema/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l2-schema.json
-- aid: laserfiche:guides-api
-  name: Laserfiche Guides API
-  description: 'Laserfiche Guides API as documented publicly: 9 operations. Contract generated from the documentation by API Evangelist (2026-10-15);
-    not the provider''s own document.'
-  humanURL: https://developer.laserfiche.com/docs/guides
+    url: json-schema/laserfiche-get-repository-v1-repositories-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-get-repository-v1-repositories-repoid-tasks-operationtoken-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l2-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v2-repositories-repositoryid-id-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-respon-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-reques-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-get-repository-v2-repositories-repositoryid-id-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-request-schema.json
+- aid: laserfiche:laserfiche-repositories-api
+  name: Laserfiche Repositories API
+  description: The Repositories API from Laserfiche — 1 operation(s) for repositories.
+  humanURL: https://developer.laserfiche.com/
   baseURL: https://api.laserfiche.com
+  tags:
+  - Repositories
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/laserfiche-guides-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/laserfiche-repositories-api-openapi.yml
   - type: JSONSchema
-    url: json-schema/laserfiche-post-repository-v2-repositories-repositoryid-id-response-schema.json
+    url: json-schema/laserfiche-post-oauth-token-request-schema.json
   - type: JSONSchema
-    url: json-schema/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-respon-schema.json
+    url: json-schema/laserfiche-post-oauth-token-response-schema.json
   - type: JSONSchema
-    url: json-schema/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-reques-schema.json
+    url: json-schema/laserfiche-get-repository-v1-repositories-response-schema.json
   - type: JSONSchema
-    url: json-schema/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-response-schema.json
+    url: >-
+      json-schema/laserfiche-get-repository-v1-repositories-repoid-tasks-operationtoken-response-schema.json
   - type: JSONSchema
-    url: json-schema/laserfiche-get-repository-v2-repositories-repositoryid-id-response-schema.json
+    url: >-
+      json-schema/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l-schema.json
   - type: JSONSchema
-    url: json-schema/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-request-schema.json
-
+    url: >-
+      json-schema/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l2-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v2-repositories-repositoryid-id-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-respon-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-reques-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-get-repository-v2-repositories-repositoryid-id-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-request-schema.json
+- aid: laserfiche:laserfiche-repository-api
+  name: Laserfiche Repository API
+  description: The Repository API from Laserfiche — 13 operation(s) for repository.
+  humanURL: https://developer.laserfiche.com/
+  baseURL: https://api.laserfiche.com
+  tags:
+  - Repository
+  properties:
+  - type: OpenAPI
+    url: openapi/laserfiche-repository-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/laserfiche-post-oauth-token-request-schema.json
+  - type: JSONSchema
+    url: json-schema/laserfiche-post-oauth-token-response-schema.json
+  - type: JSONSchema
+    url: json-schema/laserfiche-get-repository-v1-repositories-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-get-repository-v1-repositories-repoid-tasks-operationtoken-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l2-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v2-repositories-repositoryid-id-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-respon-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-reques-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-get-repository-v2-repositories-repositoryid-id-response-schema.json
+  - type: JSONSchema
+    url: >-
+      json-schema/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-request-schema.json
 x-coverage:
   state: unreadable
   reason: js-rendered-docs
