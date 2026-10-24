@@ -25,6 +25,12 @@ modified: '2026-10-14'
 
 tags:
 - Company
+- Enterprise Content Management
+- Document Management
+- Process Automation
+- Artificial Intelligence
+tags_raw:
+- Company
 - EnterpriseContentManagement
 - DocumentManagement
 - ProcessAutomation
@@ -109,6 +115,8 @@ apis:
   humanURL: https://developer.laserfiche.com/
   baseURL: https://api.laserfiche.com
   tags:
+  - Authentication
+  tags_raw:
   - Oauth
   properties:
   - type: OpenAPI

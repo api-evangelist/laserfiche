@@ -24,3 +24,28 @@ plans:
     currency: USD
     billing_period: month
     notes: "Starting price per user as listed in page meta description."
+x-canonical:
+  generated: '2026-10-23'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Professional
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Business
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Business+
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
