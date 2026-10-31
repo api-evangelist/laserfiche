@@ -64,5 +64,136 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Laserfiche is a company surfaced via the API Evangelist harvest backlog (source: tag-qc) and added to the network as a stub for full-pipeline profiling.
-- https://www.laserfiche.com
+Laserfiche delivers enterprise content management, document management, and process automation solutions that help organizations capture, manage, and secure information across people, processes, and systems. Their platform combines AI-powered data capture, workflow automation, records management, and compliance tools to improve productivity and governance for businesses of all sizes.
+
+**Areas:** Company · Enterprise Content Management · Document Management · Process Automation · Artificial Intelligence
+
+## Laserfiche on APIs.io
+
+Everything profiled for Laserfiche is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/laserfiche/](https://apis.io/providers/laserfiche/)** — or go straight to one of the APIs or properties below.
+
+### APIs (5)
+
+- [Laserfiche API](https://apis.io/apis/laserfiche/laserfiche-api/) — API documentation and developer resources for Laserfiche platform
+- [Laserfiche OAuth API](https://apis.io/apis/laserfiche/laserfiche-oauth-api/) — The Oauth API from Laserfiche — 2 operation(s) for oauth.
+- [Laserfiche Odata4 API](https://apis.io/apis/laserfiche/laserfiche-odata4-api/) — The Odata4 API from Laserfiche — 2 operation(s) for odata4.
+- [Laserfiche Repositories API](https://apis.io/apis/laserfiche/laserfiche-repositories-api/) — The Repositories API from Laserfiche — 1 operation(s) for repositories.
+- [Laserfiche Repository API](https://apis.io/apis/laserfiche/laserfiche-repository-api/) — The Repository API from Laserfiche — 13 operation(s) for repository.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (12)
+
+The data models the API reads and writes.
+
+- [GetRepositoryV1RepositoriesRepoidTasksOperationtokenResponse](https://apis.io/schemas/laserfiche/laserfiche-get-repository-v1-repositories-repoid-tasks-operationtoken-response/)
+- [GetRepositoryV1RepositoriesResponse](https://apis.io/schemas/laserfiche/laserfiche-get-repository-v1-repositories-response/)
+- [GetRepositoryV2RepositoriesRepositoryidIdResponse](https://apis.io/schemas/laserfiche/laserfiche-get-repository-v2-repositories-repositoryid-id-response/)
+- [PostOauthTokenRequest](https://apis.io/schemas/laserfiche/laserfiche-post-oauth-token-request/)
+- [PostOauthTokenResponse](https://apis.io/schemas/laserfiche/laserfiche-post-oauth-token-response/)
+- [PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL](https://apis.io/schemas/laserfiche/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l/)
+- [PostRepositoryV1RepositoriesRepoidEntriesDestinationentryidL2](https://apis.io/schemas/laserfiche/laserfiche-post-repository-v1-repositories-repoid-entries-destinationentryid-l2/)
+- [PostRepositoryV2RepositoriesRAbcd1234UserareasRequest](https://apis.io/schemas/laserfiche/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-request/)
+- [PostRepositoryV2RepositoriesRAbcd1234UserareasResponse](https://apis.io/schemas/laserfiche/laserfiche-post-repository-v2-repositories-rabcd1234-userareas-response/)
+- [PostRepositoryV2RepositoriesRepositoryidIdResponse](https://apis.io/schemas/laserfiche/laserfiche-post-repository-v2-repositories-repositoryid-id-response/)
+- [PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksReques](https://apis.io/schemas/laserfiche/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-reques/)
+- [PutRepositoryV2RepositoriesRAbc123EntriesEntrieidLinksRespon](https://apis.io/schemas/laserfiche/laserfiche-put-repository-v2-repositories-rabc123-entries-entrieid-links-respon/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Laserfiche Context](https://apis.io/jsonld/laserfiche/laserfiche-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Laserfiche API Rules](https://apis.io/rules/laserfiche/laserfiche-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Laserfiche Authentication](https://apis.io/security/laserfiche/laserfiche-authentication/)
+- [Laserfiche Domain Security](https://apis.io/security/laserfiche/laserfiche-domain-security/)
+- [Laserfiche Vulnerability Disclosure](https://apis.io/security/laserfiche/laserfiche-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Laserfiche Plans Pricing](https://apis.io/plans/laserfiche/laserfiche-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.laserfiche.com)
+- [Documentation](https://www.laserfiche.com/learn-support/developer-center/)
+- [Getting started](https://www.laserfiche.com/learn-support/developer-center/)
+- [Pricing](https://www.laserfiche.com/products/pricing/)
+- [Support](https://www.laserfiche.com/learn-support/)
+- [Changelog](https://www.laserfiche.com/products/whats-new/)
+- [Blog](https://www.laserfiche.com/blog/)
+- [Security](https://www.laserfiche.com/products/trust-security/security/)
+- [Terms of service](https://www.laserfiche.com/legal/terms-of-use/)
+- [Privacy policy](https://www.laserfiche.com/legal/privacy/)
+- [Status](https://status.laserfiche.com/)
+
+## API Evangelist rating
+
+**Kin Score 47.2** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 25.6 |
+| Contract governance | 22.0 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 57.1 |
+| Access clarity | 63.2 |
+
+**Agent readiness 15.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | — |
+
+**Regulatory alignment 28.2** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/laserfiche/](https://apis.io/providers/laserfiche/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Laserfiche: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/laserfiche/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
